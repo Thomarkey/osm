@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri');
+
+
+
+body {
+	background: #f5f8fa;
+	background-repeat: repeat;
+	font-family: Roboto, Raleway, sans-serif;
+	color: white;
+	margin:0px;
+	/* background-image: url("osm_bg.jpg");	 */
+	/* background-color: green; */
+}
+.maincontainer {
+	background: #ededed;
+	display: block;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 0px;
+	height: 100%;
+	color: black;
+}
+
+header h1 { /*titel*/
+	font-size: 40px;
+	text-align: center;
+	color: orange;
+	text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000, 
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+	padding: 50px;
+	font-family: "Hind Siliguri", sans-serif;
+}
+
+.headerimgbg {
+	background-image: url('OSM_header.jpg');
+	background-size: contain;
+	margin-bottom: 0px;
+}
+
+.master{
+  /* border:1px solid grey; */
+  padding:1em;
+}
+ 
+.main-menu {
+	/* position:fixed;  nog niet */
+	width: 100%;
+	height: auto;
+	background-color: #00447d; 
+	float: right;
+	
+}
+.nav-horizontal {
+	padding: 0px;
+	position: relative;
+	margin-left: 20%; /*was ervoor 200px, dees om overeen te komen met body*/
+	list-style: none;
+	background-color: #00447d;	
+	/* width: 561px; */
+	
+}
+.nav-horizontal.master > li {
+	display: inline-block;
+	padding-right: 25px;
+}
+.nav-horizontal > li {
+	white-space: nowrap;
+}
+.nav-horizontal > li:hover {
+	background-color: #00447d;
+}
+.nav-horizontal > li > a {
+	color: #FFFFFF;
+	display: block;
+	padding: 5px 8px;
+	text-decoration: none;
+}
+.nav-horizontal > li:hover > .nav-submenu{
+	display: block;
+	z-index: 1; /* <-- Added */
+}
+.nav-horizontal > li > .nav-submenu{
+	padding-left: 0px; /* dees zorgde voro de inspring van de submenu-list (en dus ook de probleme met de background color) ale als dit er niet is hebde da dus voor*/
+	
+}
+
+.nav-submenu {
+	position: absolute;
+	display: none;
+	/* border: solid 1 px #000000; */
+	/* border: solid 1 px #000000; */
+	/* border-radius: 3px; */
+	list-style: none;
+	background-color: #00447d;
+}
+.nav-submenu a {
+	display:block;
+	float: none;
+}
+.nav-submenu li {
+	padding: 10px;
+	padding-left:15px;	
+}
+.nav-submenu li:first-child {
+	margin-top: 15px;
+	padding-left:15px;	
+}
+
+#extra-staf{
+	padding-right: 40px;
+}
+.nav-submenu li:hover {
+	background-color: green;
+}
+
+.nav-submenu > li > a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-trigger:after {
+	display: inline-block;
+	border: solid 4px transparent;
+	border-top-color: white;
+	margin-left: 10px;
+	content: "";
+	clear: both;
+}
+
+.kruimelpad{
+	font-size: 11px;
+	color: #8c8d8f;
+	float: right;
+	
+}
+.intro{
+	color:black;
+	padding: 120px 120px 50px;
+}
+.outro{
+	padding: 30px;
+}
+.latest-articles{
+	display: block;
+	padding-left: 15%;
+	padding-top: 70px;
+	padding-right: 15%;
+	padding-bottom: 30px;
+	background-color: black;
+	color: white;
+}
+
+.bot {
+	/* height: auto; */
+	background-color: #00447d;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.bot > p, .bot > ul {
+	padding: 10px;
+	margin-left: 30px;
+	font-size: 12px;
+	color: white;
+}
+.bot > ul{
+	text-align: right;
+	
+}
+
+.bot-menu > li {
+	display: inline-block;
+	  /* float: left; gaat ook? */
+	
+}
+.bot-menu > li >a{
+	/* position: relative; */
+	text-decoration: none;
+	margin-right: 10px;
+	width: 25%;
+	display: inline;
+	color: white;
+}
+
+.columns {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  padding: 30px;
+}
+
+a.poster {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: grey;
+  padding: 10px;
+  transform: scale(1.0);
+  transition: transform 90ms ease-in-out;
+  /* border: 1px solid black; */
+  background-color: #00447d;
+  text-decoration: none;
+}
+
+a.poster.blank{
+  visibility: hidden;
+}
+
+a.poster:hover {
+  transform: scale(1.032);
+  color: red;
+}
+
+a.poster > p {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.transferbox{
+	background-image: url('transferbox.png');
+}
+.tactiekbox{
+	background-image: url('tactiekbox.png');
+}
+.bestuurbox{
+	background-image: url('bestuurbox.png');
+}
+#boxtitel{
+	font-size: 24px;
+	margin-left: 4%;
+	margin-bottom: 0px;
+	font-weight: bold;
+	color: white;
+}
+#images{
+	border-radius: 8px;
+	display: block;
+	max-width: 80%;
+	height: auto;
+	padding: 30px;
+}
+#images-special{
+	border-radius: 8px;
+	display: inline;
+	max-width: 22%;
+	height: auto;
+	padding: 30px 10px;
+}
+/* .columns{ */
+	/* padding: 150px; */
+	
+	/* color: red; */
+/* } */
+
+/* .column-1, .column-2, .column-3{ */
+	/* display: inline-block; */
+	/* position: relative; */
+	/* width: 25%; */
+	/* height: 200px; */
+	/* background-color: black; */
+	/* margin-right: 5%; */
+	
+/* } */
+/* .column-1 > a:hover, .column-2 > a:hover, .column-3 >a:hover{ */
+	/* background-image: url('transferlijst.png'); */
+	/* opacity: 0.3; */
+	/* width:110%; */
+	/* height: 220px; */
+	/* opacity: 0.9; */
+	/* -moz-box-shadow:    0 0 10px #00447d; */
+	/* -webkit-box-shadow: 0 0 10px #00447d; */
+	/* box-shadow:         0 0 10px #00447d; */
+	
+/* } */
+/* .column-2 > a:hover{ */
+	/* background-image: url('selectie.png'); */
+	/* opacity: 0.3; */
+	/* width:110%; */
+	/* height: 220px; */
+	/* opacity: 0.9; */
+	/* -moz-box-shadow:    0 0 10px #00447d; */
+	/* -webkit-box-shadow: 0 0 10px #00447d; */
+	/* box-shadow:         0 0 10px #00447d; */
+	
+/* } */
+/* .column-3 >a:hover{ */
+	/* background-image: url('stand.png'); */
+	/* opacity: 0.3; */
+	/* width:110%; */
+	/* height: 220px; */
+	/* opacity: 0.9; */
+	/* -moz-box-shadow:    0 0 10px #00447d; */
+	/* -webkit-box-shadow: 0 0 10px #00447d; */
+	/* box-shadow:         0 0 10px #00447d; */
+	
+/* } */
+
+/* .column-1 > a{ */
+	/* padding: 0px; */
+	/* display: block; */
+	/* height: 200px; */
+	/* background-color: white; */
+	/* z-index: 1; */
+/* } */
+/* .column-2 > a{ */
+	/* padding: 0px; */
+	/* display: block; */
+	/* height: 200px; */
+	/* background-color: white; */
+	
+/* } */
+/* .column-3 > a{ */
+	/* padding: 0px; */
+	/* display: block; */
+	/* height: 200px; */
+	/* background-color: white; */
+	
+/* } */
+/* #column-1 > p{ */
+	/* padding: 40px; */
+/* } */
+/* #column-1{ */
+	/* display: block; */
+	/* height: 200px; */
+/* } */
+
